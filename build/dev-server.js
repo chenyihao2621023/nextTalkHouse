@@ -1,4 +1,5 @@
 require('./check-versions')();
+require('babel-polyfill');
 const config = require('../config');
 
 if (!process.env.NODE_ENV) {
@@ -50,7 +51,7 @@ app.use(devMiddleware);
 app.use(hotMiddleware);
 
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory);
-console.log(staticPath)
+
 app.use(staticPath, express.static('./static'));
 
 const uri = `http://localhost:${port}`;

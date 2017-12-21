@@ -14,7 +14,9 @@ function resolve(dir) {
 }
 
 module.exports = {
-    entry,
+    entry: {
+        app: ["babel-polyfill",'./src/main.js']
+    },
     output: {
         path: config.build.assetsRoot,
         filename: '[name].js',
@@ -31,10 +33,16 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /.jsx?$/,
+                enforce: 'post',
+                loader: 'es3ify-loader',
+                exclude: /node_modules/
+            },
+            {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 include: [resolve('src'), resolve('utils')],
-                exclude: /node_modules/,
+                exclude: /node_modules/
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
