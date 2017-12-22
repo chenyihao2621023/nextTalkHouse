@@ -64,7 +64,7 @@ class Header extends React.Component {
       )
     })
     const navChildren = Object.keys(navData)
-      .map((key, i) => (<Item key={i}>{navData[key]}</Item>));
+      .map((key, i) => (<Item key={i}>{<a href="http://120.27.26.207/business.html">navData[key]</a>}</Item>));
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
