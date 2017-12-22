@@ -1,7 +1,7 @@
 {
   "apps": [{
-    "name": "cyh_chat333",
-    "script": "bin/develop.js",
+    "name": "nexttalk",
+    "script": "prod.server.js",
     "env": {
       "COMMON_VARIABLE":"true"
     },
@@ -15,8 +15,8 @@
       "host": ["47.93.30.123"],
       "port": "39999",
       "ref": "origin/master",
-      "repo": "https://github.com/chenyihao2621023/cyh_chat.git",
-      "path": "/www/cyh_chat/production",
+      "repo": "https://github.com/chenyihao2621023/nextTalkHouse.git",
+      "path": "/www/nexttalk/production",
       "ssh_options": "StrictHostKeyChecking=no",
       "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production",
       "env": {
