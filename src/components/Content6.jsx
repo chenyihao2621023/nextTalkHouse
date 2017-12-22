@@ -25,7 +25,7 @@ class Content extends React.Component {
       <p className="line-panel">
         <i className="item-line"></i>
       </p>
-      <p>{item.content}</p>
+      <p className="sub-content">{item.content}</p>
     </li>);
 
   render() {

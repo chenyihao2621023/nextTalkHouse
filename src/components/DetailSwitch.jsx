@@ -30,17 +30,22 @@ let dataArray = [
     content: '智能交互沟通是基于新一代智能交互沟通分析模式，给您全新的客服沟通营销体验。NextTalk 机器人通过 AI System 平台与用户沟通，让企业拥有全新的智能化客服体验，提升效率，增加营业额。'
   },
   {
-    pic: 'https://zos.alipayobjects.com/rmsportal/iCVhrDRFOAJnJgy.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/XRfQxYENhzbfZXt.png',
-    color: '#FF4058',
-    background: '#FC1E4F',
+    pic: '../../static/image/business.png',
+    map: '../../static/image/businessbg.png',
+    color: '#7AC7FF',
+    background: '#20A1FF',
+    title: '商业智能',
+    content: `<div class="content">
+                <h3>基于关键词的分析更容易反映整体趋势</h3>
+                <p>关键词权重随时间/地区的变化</p>
+                <p>通过活动关键词随时间变化判断其影响力</p>
+                <h3>基于知识点的热点分析可用于精细化提升销售和服务</h3>
+                <p>问了什么问题的用户更容易转化成付费用户</p>
+                <p>付费用户在购买后更多问哪些问题</p>
+                <p>Top100问，指导 线上 / 线下 门店销售</p>
+              </div>`
   },
-  {
-    pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
-    color: '#9FDA7F',
-    background: '#64D487',
-  },
+
 ];
 // dataArray = dataArray.map(item => ({ ...item, ...textData }));
 console.log(dataArray)
@@ -136,7 +141,7 @@ class DetailSwitchDemo extends React.Component {
         <QueueAnim type="bottom" duration={1000} delay={[!i ? this.state.delay + 500 : 800, 0]}>
           <h1 key="h1">{title}</h1>
           <em key="em" style={{ background }} />
-          <p key="p">{content}</p>
+          <div key="div" className="content-wrapper" dangerouslySetInnerHTML={{ __html: content }}></div>
         </QueueAnim>
       </Element>);
     });
