@@ -30,7 +30,7 @@ class Content extends React.Component {
             id={`${props.id}-title`}
           >
             
-            <img width="100%" src="../../static/image/bannertext.png" />
+            <img width="100%" src="./static/image/bannertext.png" />
           </span>
         </QueueAnim>
         <TweenOne
