@@ -34,7 +34,7 @@ class LogoGather extends React.Component {
     this.state = {};
     this.interval = null;
     this.gather = true;
-    this.intervalTime = 9000;
+    this.intervalTime = 3500;
   }
 
   componentDidMount() {
