@@ -178,8 +178,8 @@ class LogoGather extends React.Component {
         <TweenOne
           animation={this.state.boxAnim}
           className="right-side blur"
-          onClick={this.onMouseEnter}
           onTouchStart={this.onMouseEnter}
+          onTouchEnd={this.onMouseLeave}
           onMouseEnter={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
           ref={(c) => {
