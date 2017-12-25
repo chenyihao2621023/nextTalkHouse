@@ -178,6 +178,8 @@ class LogoGather extends React.Component {
         <TweenOne
           animation={this.state.boxAnim}
           className="right-side blur"
+          onClick={this.onMouseEnter}
+          onTouchStart={this.onMouseEnter}
           onMouseEnter={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
           ref={(c) => {
@@ -194,7 +196,7 @@ class Edit extends React.Component {
   constructor(props) {
     super(props);
     this.defaultImage = {
-      a: '../../static/image/888.png',
+      a: './static/image/888.png',
       b: 'https://zos.alipayobjects.com/rmsportal/TOXWfHIUGHvZIyb.svg',
       c: 'https://zos.alipayobjects.com/rmsportal/NbWTEbiswBhrRBU.svg',
     };

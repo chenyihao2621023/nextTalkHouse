@@ -32,10 +32,10 @@ class Content extends React.Component {
     const props = { ...this.props };
     delete props.isMode;
     const dataSource = [
-      { icon: '../../static/image/customericon.png', title: '客服方案', content: '人工智能机器人承担机械重复性问题，降低人工压力；让客服聚焦于更有价值的客户和场景；' },
-      {icon: '../../static/image/managericon.png', title: '管理者方案', content: '人工智能机器人自动质检机制，多维度数据报表分析、人机辅助、知识库共享，让客户回答标准化，减少培训成本；' },
-      { icon: '../../static/image/usericon.png', title: '用户方案', content: '系统的智能应答、智能切换、快捷输入、智能分配规则等功能让客服协同响应，减少客户等待，让企业的服务更有温度；' },
-      { icon: '../../static/image/companyicon.png', title: '企业方案', content: '采集用户行为 & 属性信息，让客服更懂客户，针对性导购服务，智能推荐关联商品；提高转化率、客单价；' }
+      { icon: './static/image/customericon.png', title: '客服方案', content: '人工智能机器人承担机械重复性问题，降低人工压力；让客服聚焦于更有价值的客户和场景；' },
+      { icon: './static/image/managericon.png', title: '管理者方案', content: '人工智能机器人自动质检机制，多维度数据报表分析、人机辅助、知识库共享，让客户回答标准化，减少培训成本；' },
+      { icon: './static/image/usericon.png', title: '用户方案', content: '系统的智能应答、智能切换、快捷输入、智能分配规则等功能让客服协同响应，减少客户等待，让企业的服务更有温度；' },
+      { icon: './static/image/companyicon.png', title: '企业方案', content: '采集用户行为 & 属性信息，让客服更懂客户，针对性导购服务，智能推荐关联商品；提高转化率、客单价；' }
     ];
     const listChildren = dataSource.map(this.getBlockChildren);
     return (

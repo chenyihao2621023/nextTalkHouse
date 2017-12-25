@@ -22,16 +22,16 @@ const textData = {
 
 let dataArray = [
   {
-    pic: '../../static/image/waveperson.png',
-    map: '../../static/image/wave.png',
+    pic: './static/image/waveperson.png',
+    map: './static/image/wave.png',
     color: '#7AC7FF',
     background: '#20A1FF',
     title: '智能交互沟通营销',
     content: '智能交互沟通是基于新一代智能交互沟通分析模式，给您全新的客服沟通营销体验。NextTalk 机器人通过 AI System 平台与用户沟通，让企业拥有全新的智能化客服体验，提升效率，增加营业额。'
   },
   {
-    pic: '../../static/image/business.png',
-    map: '../../static/image/businessbg.png',
+    pic: './static/image/business.png',
+    map: './static/image/businessbg.png',
     color: '#7AC7FF',
     background: '#20A1FF',
     title: '商业智能',

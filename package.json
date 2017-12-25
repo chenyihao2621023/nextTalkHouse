@@ -34,6 +34,7 @@
     "react": "^15.4.2",
     "react-addons-pure-render-mixin": "^15.6.0",
     "react-dom": "^15.4.2",
+    "react-fastclick": "^3.0.2",
     "react-mixin": "^3.0.5",
     "react-sublime-video": "^0.2.5",
     "resolve-url": "^0.2.1",

@@ -64,7 +64,7 @@ class Footer extends React.Component {
       <QueueAnim type="bottom" component="ul" key="ul" leaveReverse id={`${props.id}-ul`}>
         {liChildrenToRender}
         <li key={5}>
-          <img className="qr-code" src="../../static/image/qrcode.png" alt=""/>
+          <img className="qr-code" src="./static/image/qrcode.png" alt=""/>
         </li>
         
       </QueueAnim>

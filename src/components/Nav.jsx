@@ -40,19 +40,19 @@ class Header extends React.Component {
     const navData = { menu1: '首页', menu2: '产品', menu3: '案例', menu4: '招商', menu5: '帮助', menu6: '联系我们' };;
     const subData = [
       {
-        img: '../../static/image/subzhineng.png',
+        img: './static/image/subzhineng.png',
         desc: '智能机器人'
       }, {
-        img: '../../static/image/subgongdan.png',
+        img: './static/image/subgongdan.png',
         desc: '工单中心'
       }, {
-        img: '../../static/image/subkefu.png',
+        img: './static/image/subkefu.png',
         desc: '在线客服'
       }, {
-        img: '../../static/image/subdingzhi.png',
+        img: './static/image/subdingzhi.png',
         desc: '个性定制'
       }, {
-        img: '../../static/image/subtongji.png',
+        img: './static/image/subtongji.png',
         desc: '数据统计'
       }
     ]
@@ -106,7 +106,7 @@ class Header extends React.Component {
         animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
         id={`${this.props.id}-logo`}
       >
-        <img src="../../static/image/logo.png" height="31px" />
+        <img src="./static/image/logo.png" height="31px" />
       </TweenOne>
       {isMode ? (<div
         className={`${this.props.className}-phone-nav${this.state.phoneOpen ? ' open' : ''}`}
