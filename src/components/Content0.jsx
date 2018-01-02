@@ -16,7 +16,7 @@ class Content extends React.Component {
         playScale={[0.3, 0.1]}
         {...props}
       >
-      <Logo key="logo" isMode={isMode}/>
+      <Logo key="logooo" isMode={isMode}/>
         <QueueAnim
           type={['bottom', 'top']}
           delay={200}
